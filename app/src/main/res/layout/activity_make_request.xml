@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".screens.MakeRequestActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Write a message for Community to help you"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextMakeRequestActivityMessage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/image_view_border"
+        android:hint="@string/blood_group_city_message"
+
+        android:paddingLeft="15dp"
+        android:gravity="start"
+        android:paddingTop="0dp"
+        android:cursorVisible="false"
+        android:minLines="6"
+        android:maxLines="10"
+        android:textAlignment="gravity" />
+
+    <Button
+        android:id="@+id/buttonMakeRequestActivityPostRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_state"
+        android:text="Post Request"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarMakeRequest"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTintMode="multiply"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/colorLightRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

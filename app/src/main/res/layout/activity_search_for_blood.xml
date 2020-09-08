@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".screens.SearchForDonorsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="start"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_worry_you_will_find_your_hope_here"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="28sp"
+       android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose City"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            />
+    <EditText
+        android:id="@+id/editTextSearchForBloodActivityCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="eg : Hyderabad"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Blood Group"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/editTextSearchForBloodActivityBloodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="eg : B+/b+"
+        />
+
+    <Button
+        android:id="@+id/buttonSearchForBloodActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_state"
+        android:onClick="onClickFindDonor"
+        android:text="Find Donor"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="24dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSearchDonor"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTintMode="multiply"
+        android:layout_margin="20dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/colorLightRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
